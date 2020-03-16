@@ -1,0 +1,59 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Overview Section*/
+#overviewSection {
+    background-image: url("../img/showcase.jpg");
+    background-size: cover;
+    height: max-content;
+}
+
+
+#title {
+    font-size: 1.5rem;
+}
+
+#secRight h3 {
+    color: yellow;
+}
+
+#secLeft {
+    background-image: url(../img/sec.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+
+#f2Left {
+    background-image: url(../img/pic3.jpg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 766px) {
+    #f2Left {
+        height: 300px;
+        background-size: 100%;
+    }
+}
+
+
+/*Register Page*/
+#showcaseSection{
+    background-image: url("../img/showcase2.jpg");
+    background-size: cover;
+    height: max-content;
+}

@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TP3_ACHAMRAR_YASSIR.Site" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="Content/bootstrap.css" />
+    <link rel="stylesheet" href="Content/style.css" />
+    <link rel="stylesheet" href="Content/font-awesome.css" />
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .abcRioButtonLightBlue {
+            width: 100% !important;
+            height: 100% !important;
+            padding: 6px 12px !important;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+
+    <!--Navbar-->
+    <nav id="main-nav" class="navbar navbar-expand-sm navbar-light bg-light mb-0 sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#overviewSection">
+                <img style="height: 40px;" src="img/logo2.png" /></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <asp:HyperLink NavigateUrl="index.aspx#overviewSection" runat="server" CssClass="nav-link" Text="Overview" />
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.aspx#featuresSection">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.aspx#gallerySection">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.aspx#teamSection">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.aspx#contactSection">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-info text-light" href="register.aspx">Register Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--END Navbar-->
+
+    <form id="form" runat="server">
+        <div>
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+
+            <asp:ContentPlaceHolder ID="main" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+        </div>
+    </form>
+
+    <!--Footer-->
+
+    <footer id="main-footer" class="bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-4">
+                    <h3>SmartCity</h3>
+                    <p>Copyright &copy;<span id="year"></span></p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!--END Footer-->
+
+
+
+</body>
+</html>
